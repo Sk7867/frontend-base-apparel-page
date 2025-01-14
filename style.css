@@ -1,41 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
-:root{
+:root {
   --desat-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
   --dark-grayish-red: hsl(0, 6%, 24%);
-  --font-16: 16px
+  --font-16: 16px;
 }
 
 /* Reset Styling */
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   position: relative;
   font-size: 16px;
 }
 
-.base_apperal_container{
+.base_apperal_container {
   width: 100%;
 }
 
-.mobile_logo_conatiner{
+.mobile_logo_conatiner {
   margin-block-start: 25px;
   margin-inline-start: 25px;
 }
-.mobile_logo_conatiner img{
+.mobile_logo_conatiner img {
   object-fit: contain;
 }
 
-.mobile_model_image_container{
+.mobile_model_image_container {
   width: 100%;
   height: 100%;
 }
-.mobile_model_image_container img{
+.mobile_model_image_container img {
   width: 100%;
   height: 100%;
   min-height: 210px;
@@ -43,31 +45,93 @@ body{
   object-fit: cover;
 }
 
-.container_left{
-  background: var(--desat-red);
+.container_left {
+  background: linear-gradient(
+    150deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 100%, 98%) 85%
+  );
   padding: 30px;
 }
 
-.desktop_logo_conatiner{
+.desktop_logo_conatiner {
   display: none;
 }
 
-.container_heading h1{
+.container_heading h1 {
   font-size: 3rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-grayish-red);
+  text-transform: uppercase;
+  gap: 13px;
 }
 
+.container_description {
+  margin-block: 1rem 0;
+  color: var(--desat-red);
+  font-size: 0.8rem;
+  text-align: center;
+}
 
-.text_highlight{
-  color: var(--soft-red);
+.sign_up_form {
+  position: relative;
+  width: 100%;
+  margin-block-start: 2rem;
+}
+
+.sign_up_form_label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  color: var(--desat-red);
+  transition: all 0.1s ease-in-out;
+}
+
+.sign_up_form_input {
+  width: 100%;
+  border: 1px solid var(--desat-red);
+  border-radius: 1.7rem;
+  color: var(--desat-red);
+  padding: 0.75rem 7.5rem 0.75rem 1.5rem;
+  max-height: 2.5rem;
+  outline: none;
+  background: inherit;
+}
+.sign_up_form_input::placeholder {
+  color: var(--desat-red);
+}
+
+.sign_up_form_button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-items: center;
+  border-radius: 1.7rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%));
+  padding: 0.6rem 1.625rem;
+  max-height: 2.5rem;
+  outline: none;
+  border: none;
+}
+
+.sign_up_form_button img{
+  width: 100%;
+  height: 100%;
+}
+
+.text_highlight {
+  color: var(--desat-red);
 }
 
 /* Sticky Footer */
-.sticky_footer{
+.sticky_footer {
   position: sticky;
   bottom: 0;
 }
-
 
 /* Font Classes */
 .josefin-sans-300 {
@@ -80,6 +144,12 @@ body{
   font-family: "Josefin Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+.josefin-sans-600 {
+  font-family: "Josefin Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
 }
 .josefin-sans-700 {

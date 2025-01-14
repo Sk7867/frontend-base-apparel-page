@@ -33,18 +33,26 @@
       <div class="container_heading">
         <h1>
           <span class="text_highlight josefin-sans-300">We're</span>
-          <span class="josefin-sans-700">coming</span>
-          <span class="josefin-sans-700">soon</span>
+          <span class="josefin-sans-600">coming</span>
+          <span class="josefin-sans-600">soon</span>
         </h1>
       </div>
+      <p class="container_description josefin-sans-400">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+  Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form class="sign_up_form" id="form">
+        <label class="sign_up_form_label" for="email" hidden>Email Address</label>
+        <input id="form_input" class="sign_up_form_input" placeholder="Email Address" type="email" id="email" name="email" aria-describedby="email-error" maxlength="255" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+        <p class="form_error" hidden>Enter Valid Email Address</p>
+        <button id="form_submit" type="submit" class="sign_up_form_button">
+          <img src="./images/icon-arrow.svg" alt="Form Submit Button">
+        </button>
+      </form>
     </div>
   </div>
     
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
   
   <footer class="sticky_footer">
     <p class="attribution">
@@ -52,5 +60,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="./form_validation.js"></script>
 </body>
 </html>
