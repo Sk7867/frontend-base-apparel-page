@@ -43,11 +43,14 @@
       </p>
       <form class="sign_up_form" id="form">
         <label class="sign_up_form_label" for="email" hidden>Email Address</label>
-        <input id="form_input" class="sign_up_form_input" placeholder="Email Address" type="email" id="email" name="email" aria-describedby="email-error" maxlength="255" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
-        <p class="form_error" hidden>Enter Valid Email Address</p>
-        <button id="form_submit" type="submit" class="sign_up_form_button">
-          <img src="./images/icon-arrow.svg" alt="Form Submit Button">
-        </button>
+        <input id="form_input" class="sign_up_form_input" placeholder="Email Address" type="email" id="email" name="email" aria-describedby="email-error" maxlength="255" required>
+        <p class="form_error josefin-sans-300">Enter Valid Email Address</p>
+        <div class="sign_up_form_submit_container">
+          <img class="form_error" src="./images/icon-error.svg" alt="">
+          <button id="form_submit" type="submit" class="sign_up_form_button">
+            <img src="./images/icon-arrow.svg" alt="Form Submit Button">
+          </button>
+        </div>
       </form>
     </div>
   </div>
